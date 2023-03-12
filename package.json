@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/MagicHacker/Ad-Admin-Node/issues"
   },
-  "homepage": "https://github.com/MagicHacker/Ad-Admin-Node#readme"
+  "homepage": "https://github.com/MagicHacker/Ad-Admin-Node#readme",
+  "dependencies": {
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
 }
