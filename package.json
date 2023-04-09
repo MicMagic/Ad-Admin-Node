@@ -2,7 +2,7 @@
   "name": "ad-admin-node",
   "version": "1.0.0",
   "description": "ad admin CRM backend with node",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "dev": "nodemon app.js"
