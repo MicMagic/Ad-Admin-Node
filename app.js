@@ -2,10 +2,13 @@
 const Koa = require('koa');
 const bodyParser = require('koa-body');
 const cors = require('koa-cors');
+const { router } = require('./src/router');
 // 创建Koa实例
 const app = new Koa();
 app.use(bodyParser());
 app.use(cors());
+// 引入路由
+app.use(router.routes());
 
 // 监听3000端口
 app.listen(3000, () => {
