@@ -3,6 +3,8 @@ const KoaRouter = require('koa-router');
 
 const router = new KoaRouter();
 
-module.exports = {
-	router
-};
+router.get('/', async (ctx) => {
+	ctx.body = 'koa2 string';
+});
+
+module.exports = router;
