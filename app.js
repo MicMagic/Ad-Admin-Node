@@ -1,4 +1,5 @@
 // 项目入口
+require('./src/alias');
 const Koa = require('koa');
 const { koaBody } = require('koa-body');
 const cors = require('koa-cors');
@@ -10,7 +11,7 @@ const app = new Koa();
 // 中间件
 app.use(koaBody());
 app.use(logger());
-app.use(require('koa-static')(__dirname, './src/public'));
+app.use(require('koa-static')(__dirname, '@public'));
 app.use(cors());
 // 引入路由
 app.use(index.routes(), index.allowedMethods());
